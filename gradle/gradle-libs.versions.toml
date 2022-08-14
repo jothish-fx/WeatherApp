@@ -1,0 +1,31 @@
+#Version Catalog Dependency Management
+[versions]
+agp = "7.2.2"
+kotlin = "1.7.10"
+gms = "4.3.13"
+dagger-hilt = "2.43"
+bem-manes = "0.42.0"
+crashlytics = "2.9.1"
+perf = "1.4.1"
+nav = "2.5.0"
+ksp = "1.7.10-1.0.6"
+littlerobots-vcu = "0.3.1"
+secrets-gradle-plugin = "2.0.1"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt" }
+bem-manes = { id = "com.github.ben-manes.versions", version.ref = "bem-manes" }
+littlerobots-vcu = { id = "nl.littlerobots.version-catalog-update", version.ref = "littlerobots-vcu" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets-gradle-plugin" }
+
+
+[libraries]
+#AGP Plugins
+navigation-safeargs = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "nav" }
+gms-google-services = { module = "com.google.gms:google-services", version.ref = "gms" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "crashlytics" }
+firebase-perf = { module = "com.google.firebase:perf-plugin", version.ref = "perf" }

@@ -1,0 +1,190 @@
+#Version Catalog Dependency Management
+[versions]
+core-ktx = "1.8.0"
+appcompact = "1.5.0-beta01"
+material = "1.6.1"
+constraintlayout = "2.1.4"
+constraintlayout-compose = "1.0.1"
+junit = "4.13.2"
+ext-junit = "1.1.3"
+espresso = "3.4.0"
+nav = "2.5.0"
+nav-compose = "2.5.0"
+lifecycle = "2.5.0"
+timber = "5.0.1"
+dagger-hilt = "2.43"
+camerax = "1.1.0"
+kpermissions = "3.3.0"
+eventbus = "3.3.1"
+compose-material3 = "1.0.0-alpha16"
+compose-base = "1.3.0-alpha03"
+compose-compiler = "1.3.0"
+hilt-compose = "1.0.0"
+activity-compose = "1.5.1"
+maps-compose = "2.5.2"
+maps-ktx = "3.4.0"
+play-services-maps = "18.1.0"
+gms = "20.0.0"
+datastore = "1.0.0"
+coil = "2.1.0"
+ucrop-native = "2.2.6-native"
+cropper = "4.3.1"
+retrofit = "2.9.0"
+moshi = "1.13.0"
+okhttp = "4.10.0"
+coroutines = "1.6.4"
+kotlin = "1.7.10"
+accompanist = "0.24.13-rc"
+compressor = "3.0.1"
+gson = "2.9.0"
+zxing = "4.3.0"
+
+
+[libraries]
+#Core Plugins
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+appcompact = { module = "androidx.appcompat:appcompat", version.ref = "appcompact" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+#Navigation Component
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "nav" }
+navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "nav" }
+#Testing Navigation
+navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "nav" }
+#Feature module Support
+#navigation-dynamic-features-fragment = {module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "nav"}
+#Jetpack Compose Integration
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "nav" }
+
+#LifeCycle
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-common-java8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycle" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+
+#Kotlin
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+
+
+#Coroutines
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutines" }
+
+#Timber
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+#Dagger-Hilt
+dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger-hilt" }
+dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger-hilt" }
+dagger-hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "dagger-hilt" }
+
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-compose" }
+
+#CameraX
+camera-core = { module = "androidx.camera:camera-core", version.ref = "camerax" }
+camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camerax" }
+camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camerax" }
+#camera-video = { module = "androidx.camera:camera-video", version.ref = "camerax" }
+camera-view = { module = "androidx.camera:camera-view", version.ref = "camerax" }
+camera-extensions = { module = "androidx.camera:camera-extensions", version.ref = "camerax" }
+
+#KPermissions
+kpermissions-base = { module = "com.github.fondesa:kpermissions", version.ref = "kpermissions" }
+kpermissions-coroutines = { module = "com.github.fondesa:kpermissions-coroutines", version.ref = "kpermissions" }
+
+#Event Bus
+eventbus = { module = "org.greenrobot:eventbus", version.ref = "eventbus" }
+
+#Jetpack Compose
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose-base" }
+compose-ui-tooling-debug = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-base" }
+compose-ui-test-manifest-debug = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-base" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-base" }
+compose-ui-util = { module = "androidx.compose.ui:ui-util", version.ref = "compose-base" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose-base" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose-base" }
+#compose-material-icons-core = { module = "androidx.compose.material:material-icons-core", version.ref = "compose-base" }
+#compose-material-icons-extended = { modcompilerule = "androidx.compose.material:material-icons-extended", version.ref = "compose-base" }
+compose-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "compose-base" }
+constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayout-compose" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+compose-ui-test = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-base" }
+
+material3-base = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+material3-window-size = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "compose-material3" }
+
+#Coil
+coil-base = { module = "io.coil-kt:coil", version.ref = "coil" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+
+#uCrop
+ucrop = { module = "com.github.yalantis:ucrop", version.ref = "ucrop-native" }
+
+#Android Image Cropper
+cropper = { module = "com.github.CanHub:Android-Image-Cropper", version.ref = "cropper" }
+
+#zxing-android-embedded
+zxing = { module = "com.journeyapps:zxing-android-embedded", version.ref = "zxing" }
+
+#DataStore
+datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+
+#Core Test
+junit = { module = "junit:junit", version.ref = "junit" }
+test-junit = { module = "androidx.test.ext:junit", version.ref = "ext-junit" }
+test-espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+
+#Retrofit
+retrofit-base = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+
+#Moshi
+moshi-base = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshi-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
+
+#OkHttp
+okhttp-bom = { module = "com.squareup.okhttp3:okhttp-bom", version.ref = "okhttp" }
+okhttp-base = { module = "com.squareup.okhttp3:okhttp" }
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor" }
+
+#Image Compressor
+compressor = { module = "id.zelory:compressor", version.ref = "compressor" }
+
+#Accompanist
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
+accompanist-pager-base = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanist" }
+accompanist-pager-indicators = { module = "com.google.accompanist:accompanist-pager-indicators", version.ref = "accompanist" }
+
+#Gson
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+#Google Maps
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "play-services-maps" }
+maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "maps-compose" }
+maps-ktx = { module = "com.google.maps.android:maps-ktx", version.ref = "maps-ktx" }
+maps-utils-ktx = { module = "com.google.maps.android:maps-utils-ktx", version.ref = "maps-ktx" }
+gms-location = { module = "com.google.android.gms:play-services-location", version.ref = "gms" }
+
+[bundles]
+coreLibs = ["core-ktx", "appcompact", "material"]
+navigation = ["navigation-fragment-ktx", "navigation-ui-ktx", "navigation-compose"]
+lifecycle = ["lifecycle-viewmodel-ktx", "lifecycle-livedata-ktx", "lifecycle-runtime-ktx", "lifecycle-common-java8", "lifecycle-viewmodel-compose"]
+coroutines = ["coroutines-core", "coroutines-android", "coroutines-play-services"]
+camerax = ["camera-camera2", "camera-lifecycle", "camera-view"]
+kpermissions = ["kpermissions-base", "kpermissions-coroutines"]
+coil = ["coil-base", "coil-compose"]
+compose = ["activity-compose", "compose-ui", "compose-ui-tooling-preview", "compose-ui-util", "compose-foundation", "compose-runtime-livedata", "constraintlayout-compose"] #"compose-material-icons-core", "compose-material-icons-extended",
+material3 = ["material3-base", "material3-window-size"]
+okhttp = ["okhttp-base", "okhttp-logging-interceptor"]
+retrofit = ["retrofit-base", "retrofit-converter-moshi", "moshi-base"]
+maps = ["play-services-maps", "maps-compose", "maps-ktx", "maps-utils-ktx", "gms-location"]
+
+testLibs = ["test-junit", "test-espresso", "dagger-hilt-android-testing"]
+androidTestLibs = ["junit", "navigation-testing", "dagger-hilt-android-testing", "compose-ui-test"]
+kaptTestLibs = ["dagger-hilt-compiler"]
+kaptAndroidTestLibs = ["dagger-hilt-compiler"]
